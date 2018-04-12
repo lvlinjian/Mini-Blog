@@ -1,0 +1,39 @@
+
+    <!-- 右 -->
+    <div class="content">
+        <div class="header">
+            <h1 class="page-title">权限修改</h1>
+        </div>
+
+        <div class="well">
+            <!-- add form -->
+            <form id="tab" action="" method="post">
+                <input type="hidden" name="id" value="{$data.id}"></input>
+                <label>权限名称：</label>
+                <input type="text" name="auth_name" value="{$data.auth_name}" class="input-xlarge">
+                <label>上级权限</label>
+                <select name="pid" class="input-xlarge">
+                    <volist name="top_all" id="vol">
+                    <option value="{$vol.id}" <if condition="$vol.id eq  $data.pid "> selected="selected" </if>>{$vol.auth_name}</option>
+                    </volist>
+                </select>
+                <label>控制器：</label>
+                <input type="text" name="auth_c" value="{$data.auth_c}" class="input-xlarge">
+                <label>方法：</label>
+                <input type="text" name="auth_a" value="{$data.auth_a}" class="input-xlarge">
+                <label>是否菜单项</label>
+                <select name="is_nav" class="input-xlarge">
+                    <option value="1">是</option>
+                    <option value="0">否</option>
+                </select>
+
+                <label></label>
+                <button class="btn btn-primary" type="submit">保存</button>
+            </form>
+        </div>
+        <!-- footer -->
+        <footer>
+            <hr>
+            <p>© 2018 <a href="javascript:void(0);" target="_blank">zebra</a></p>
+        </footer>
+    </div>

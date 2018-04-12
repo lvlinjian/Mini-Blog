@@ -1,0 +1,45 @@
+    <!--右侧主操作区-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i>
+                <a href="?p=back">首页</a>
+                <span class="crumb-step">&gt;</span>
+                <span class="crumb-name">分类管理</span>
+                <span class="crumb-step">&gt;</span>
+                <span class="crumb-name">添加分类</span>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="__CONTROLLER__/edit" method="post" id="myform" >
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                            <input type="hidden" name="id" value="{$data.id}">
+                                <th><i class="require-red">*</i>分类名称：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="cate_name" size="50" value="{$data.cate_name}" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>分类描述：</th>
+                                <td>
+                                    <textarea name="cate_desc" class="common-textarea" cols="60" rows="4">{$data.cate_desc}</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <!--/右侧主操作区-->

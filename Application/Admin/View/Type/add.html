@@ -1,0 +1,51 @@
+
+    <!-- 右 -->
+    <div class="content">
+        <div class="header">
+            <h1 class="page-title">商品新增</h1>
+        </div>
+
+        <!-- add form -->
+               <form action="__CONTROLLER__/add" method="post" id="myform" >
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>分类名称：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="cate_name" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>分类描述：</th>
+                                <td>
+                                    <textarea name="cate_desc" class="common-textarea" cols="60" rows="4"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+        <!-- footer -->
+        <footer>
+            <hr>
+            <p>© 2018 <a href="javascript:void(0);" target="_blank">zebra</a></p>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        // $(function(){
+        //     $('.add').click(function(){
+        //         var add_div = '<div>[<a href="javascript:void(0);" class="sub">-</a>]商品图片：<input type="file" name="goods_pics[]" value="" class="input-xlarge"></div>';
+        //         $(this).parent().after(add_div);
+        //     });
+        //     $('.sub').live('click',function(){
+        //         $(this).parent().remove();
+        //     });
+        // });
+    </script>
+</body>
+</html>

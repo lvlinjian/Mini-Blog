@@ -1,0 +1,75 @@
+
+          <!-- 新模块往这里写 -->
+<!-- 博文 情景模块 begin-->
+<volist name="data" id="v">
+<div class="panel">
+    <div class="panel-heading">
+    <span class="panel-title">Title：{$v.title}<span class="pull-right">{$v.pubtime} &#9674; 访问量：{$count} &#9674; Author: NULL</span></span>
+    </div>
+    <div class="panel-body clearfix"><!-- clearfix清除浮动、pull-left左浮动、pull-right右浮动 -->
+    <p class="lead">&emsp;&emsp;{$v.content}</p>
+    </div>
+</div>
+</volist>
+<span class="text-center"><h4>{$page}</h4></span>
+        </div><!--/.col-xs-12.col-sm-9-->
+        
+
+<script type="text/javascript">
+// 情景主题数组
+var Colors = [];
+var ColorArray = [];
+for (var i = $('.panel').length - 1; i >= 0; i--) {
+    if(ColorArray.length == 0){
+        ColorArray = ['success', 'info', 'warning', 'danger'];
+    } //, 'primary' 蓝色背景，白色字体不支持响应式，或者说我没找到解决方案
+    var rand = Math.floor(Math.random() * ColorArray.length);
+    var Color = ColorArray[rand];
+    ColorArray.splice(rand,1);
+    Colors.push(Color);
+}
+// 随机主题Color
+$(".panel").each(function(index){
+      $(this).addClass('panel-' + Colors[index]); 
+});         
+// 和风天气API
+
+function tq_api(){
+
+  var city=$('.tq_city').val();
+
+  //发送ajax请求
+// console.log(city);
+
+  $.ajax({
+
+      'url':'__CONTROLLER__/api_tq',
+
+      'type':'get',
+
+      'data':'city=' + city,
+
+      'dataType':'json',
+
+      'success':function(response){
+
+          // console.log(response);
+
+          //显示到页面
+
+          $('.api_tq_data').html(response);
+
+      },
+
+  }); 
+
+}
+
+// 绑定HTML加载完成事件
+$(document).ready(function(){
+  tq_api(); // 查一次天气
+  });  
+// 控制富文本内容中较大图片的响应式支持效果
+  $("div p img").addClass("img-responsive");
+  // $(".zccode").removeClass("img-responsive");
+</script>

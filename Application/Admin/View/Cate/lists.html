@@ -1,0 +1,89 @@
+    <!--右侧主操作区-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i>
+                <a href="?p=back">首页</a>
+                <span class="crumb-step">&gt;</span>
+                <span class="crumb-name">分类管理</span>
+            </div>
+        </div>
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="" method="post">
+                    <table class="search-tab">
+                        <tr>
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="__CONTROLLER__/add"><i class="icon-font"></i>添加分类</a>
+                        <a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i>批量删除</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%">
+                                <input class="allChoose check-all" name="" type="checkbox">
+                            </th>
+                            <th>ID</th>
+                            <th>标题</th>
+                            <th>分类介绍</th>
+                            <th>操作</th>
+                        </tr>
+                        <volist name="data" id="v">
+                        <tr>
+                            <td class="tc">
+                                <input name="id[]" value="1" class="row_check" type="checkbox">
+                            </td>
+                            <td>{$v.id}</td>
+                            <td >{$v.cate_name}</td>
+                            <td>{$v.cate_desc}</td>
+                            <td>
+                                <a class="link-update" href="__CONTROLLER__/edit/id/{$v.id}">修改</a>
+                            <a class="link-del" href="__CONTROLLER__/delete/id/{$v.id}">删除</a>
+                            </td>
+                        </tr>
+                        </volist>
+                       
+                                            </table>
+                    <div class="list-page"> 2 条 1/1 页</div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!--/右侧主操作区-->
+    <script>
+                    // $('.row_check').click(function(){
+                    //     var a='';
+                    // //判断，如果所有行都选中，则全选要选中
+                    // //判断 选中的行数 和 所有的行数
+                    //  var checked_num = $('.row_check:checked').length;
+                    //  var total_num = $('.row_check').length;
+                    // // // console.log(checked_num);
+                    // // // console.log(total_num);
+                    //  if( checked_num == total_num){
+                    //      //全选设置为选中
+                    //      consloe.log($('.check-all'));
+                    //  }else{
+                    //      //全选设置为取消
+                    //      // $('.check-all').prop('checked', false);
+                    //  }
+                     // });
+                    //  $('.check-all').click(function(){
+                    //     var status = $(this).prop('checked');
+                    //      //将每一行的checkbox选中状态 和全选保持一致
+                    //  $('.row_check').prop('checked', status);
+                    //   // console.log(a);
+                    // });
+    </script>

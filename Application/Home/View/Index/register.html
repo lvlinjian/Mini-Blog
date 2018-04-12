@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action={:U("register")} method="post">
+    用户名：<input type="text" name="username"/>
+    <br/>
+    密　码:<input type="password" name="password"/>
+    <br/>
+    确认密码：<input type="password" name="re_password"/>
+    <br/>
+    邮箱：<input type="text" name="email"/>
+    <br/>
+    昵称：<input type="text" name="nickname"/>
+    <br/>
+    验证码：<input name="code" type="text"> <img style="width: 100px;height:30px" onclick="this.src='{:U('verify')}?'+Math.random();" src="{:U('verify')}"/>
+    <input type="submit" value="注册"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>斑马缘博客园 - NULL</title>
+    <style type="text/css"></style>
+    <!-- 百度云观测 http://www.miniblog.top/ -->
+    <meta baidu-gxt-verify-token="e95e5061c6305eff6dc954d9969fa1a9">
+    <!-- https://miniblog.top/ -->
+	<meta baidu-gxt-verify-token="2690630927c254c8c3696bc786eda2af">
+<!--bootstrap框架 begin-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/offcanvas.css">
+    <script type="text/javascript" src="__PUBLIC__/bootstrap/js/jq.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/bootstrap/js/offcanvas.js"></script>
+    <style type="text/css">
+      .zebra_logo{
+        width:50px;
+      }
+    </style>
+    </head>
+<body>
+<!--首页静态导航栏 begin-->
+    <!-- Static navbar 首页静态 导航栏 -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="zebra_logo" src="__PUBLIC__/Home/images/zebra.jpg">
+          <a class="navbar-brand" href="javascript:void(0)">NULL 的博客</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a class="glyphicon glyphicon-home" href="javascript:void(0)">首页</a></li>
+            <li><a class="glyphicon glyphicon-user" href="javascript:void(0)">关于</a></li>
+            <li><a class="glyphicon glyphicon-envelope" href="javascript:void(0)">联系</a></li>
+            <li class="dropdown">
+              <a class="glyphicon glyphicon-align-left" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:void(0)">NULL</a></li>
+                <li><a href="javascript:void(0)">NULL</a></li>
+                <li><a href="javascript:void(0)">NULL</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">NULL</li>
+                <li><a href="javascript:void(0)">NULL</a></li>
+                <li><a href="javascript:void(0)">NULL</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+                <if condition="$Think.session.manager_info == null ">
+                    <li role="presentation"><a  href="#myModal" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-edit"></span>&nbsp;注册</a></li>
+                    <li role="presentation" class="active"><a class="glyphicon glyphicon-user" href={:U("admin/login/index")}>登录</a></li>
+
+
+                <else/>
+                    <li role="presentation"><a class="glyphicon glyphicon-user" href={:U("admin/index/index")}>后台管理</a></li>
+                    <li role="presentation" class="active"><a href="javacript:void(0);" target="_top" class="h">{$Think.session.manager_info.nickname}</a></li>
+
+                </if>
+                <span class="sr-only">(current)</span>
+            <li role="presentation"><a class="glyphicon glyphicon-off" href={:U("admin/login/logout")}>退出</a></li>
+          </ul>
+
+            </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav><!-- navbar -->
+<!--注册-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">新用户注册</h4>
+            </div>
+            <div class="modal-body">
+                <form action={:U("index/register")} method="post">
+                    <div class="form-group">
+                        <label for="">用户名</label>
+                        <input type="text" name="username" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">密码</label>
+                        <input type="password" name="old_password" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="">确认密码</label>
+                        <input type="password" name="re_password" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="">昵称</label>
+                        <input type="text" name="nickname" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="">邮箱</label>
+                        <input type="text" name="email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="">验证码</label>
+                        <div class="input-group">
+                            <!--<span class="input-group-addon input-group-lg" >验证码：</span>-->
+                            <input type="text" class="form-control" placeholder="Code" name="code" />
+                            <span class="input-group-addon input-group-lg" >
+                                <img style="width: 100px;height:20px" onclick="this.src='{:U('index/verify')}?'+Math.random();" src="{:U('index/verify')}"/>
+                            </span>
+                        </div>
+                    </div>
+                    <input type="hidden" name="id" value="{$_SESSION['id']}"/>
+
+
+                    <div class="form-group modal-footer">
+                        <input type="submit" value="确认提交" class="btn btn-success">
+                        <input type="reset" value="重置内容" class="btn btn-danger">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">侧边栏</button>
+          </p>
+{__CONTENT__}
+
+<!--右侧菜单栏 begin-->
+            <!-- this is 右侧响应式支持 -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+
+<!-- 右边侧边栏第1个展区 -->
+    <div class="thumbnail">
+      <img width="100%" src="/Static/abc.gif" alt="bg:NULL">
+      <div class="caption">
+        <!-- User Logo Css figure begin -->
+        <figure style="width: 100px;height: 100px;margin-left: 25%;margin-top: -25%;">
+        <img class="img-circle img-thumbnail" src="/Static/userlogo.png" alt="userlogo">
+        </figure>
+        <h3>博主：NULL</h3>
+        <p><label class="control-label">文章：</label>
+          <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
+          <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
+          <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
+          <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
+          <a href="javascript:void(0)" class="btn btn-default" role="button">......</a>
+        </p>
+      </div>
+    </div>
+<!-- 这里展示天气 -->
+    <div class="thumbnail">
+      <img src="/Static/tianqi.png" alt="和风天气">
+      <div class="caption">
+        <label class="control-label">由“<a href="https://www.heweather.com/price">和风天气</a>”提供服务</label>
+          <div class="input-group">
+            <input placeholder="北京" type="text" class="form-control tq_city">
+            <span class="input-group-btn">
+              <button class="btn btn-success" onclick="tq_api()" type="button">查询</button>
+            </span>
+          </div>
+          <div class="lead text-info api_tq_data">累计查询次数：{$count}</div>
+      </div>
+    </div>
+
+<!-- 友情链接 -->
+    <div class="thumbnail">
+      <img src="/Static/yqlj.jpg" alt="友情链接">
+      <div class="caption">
+        <label class="control-label"><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=bmy%40miniblog%2etop">审核</a>&#8629;</label>
+        <div>
+          <a href="javascript:void(0)">空</a>
+        </div>
+      </div>
+    </div>
+
+<!-- APP -->
+    <div class="thumbnail">
+      <label class="control-label text-center">斑马缘安卓APP</label>
+      <img src="/Static/app2.png" alt="app2.png">
+      <span><a href="http://downloadpkg.apicloud.com/app/download?path=http://7zsxnk.com1.z0.glb.clouddn.com/9ac4fcc2c2e8fd1622fe1a1626a56723_d">下载：1.1M</a></span>
+    </div>
+<!-- end 右1 -->
+    <!--右侧菜单栏 end-->
+
+
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row row-offcanvas-->
+
+<!-- 底部 begin -->
+
+<footer class="footer" style="clear: both">
+  <p>{$times}&emsp;<a href="http://webscan.360.cn/index/checkwebsite/url/www.miniblog.top"><img border="0" src="http://webscan.360.cn/status/pai/hash/09bb05ff282ee7db9b53b1fabd6c1724"/></a><hr><a href='__ROOT__'>“斑马缘”MiniBlog项目:LNMP+TP3+BS3+原创</a><br>Author: admin@tlip.cn&emsp;<a href=http://www.miitbeian.gov.cn/ target=_blank>京ICP备18012961号-1</a>&emsp;</p>
+</footer>
+    </div><!--  end container -->
+</body>
+</html>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b0230bfc08dee11f7f5ce9a9e03ed502";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

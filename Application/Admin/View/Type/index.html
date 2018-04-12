@@ -1,0 +1,131 @@
+
+    <!-- 右 -->
+    <div class="content">
+        <div class="header">
+            <h1 class="page-title">文章列表</h1>
+        </div>
+
+        <div class="well">
+            <!-- search button -->
+                <div class="row-fluid" style="text-align: left;">
+                    <div class="pull-left span4 unstyled">
+                        <p> 文章名称：
+                        <input class="input-medium  neirong" value="{$content}" name="content" type="text"></p>
+                    </div>
+                </div>
+                <button type="button" class="btn cz">查找</button>
+                <a class="btn btn-primary" href="__CONTROLLER__/add">新增</a>
+        </div>
+        <div class="well">
+            <!-- table -->
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>分类编号</th>
+                        <th>分类名称</th>
+                        <th>分类评论</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody class = "list">
+                </tbody>
+            </table>
+            <!-- pagination -->
+            <div class="yahoo2" >
+                
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <hr>
+            <p>© 2018 <a href="javascript:void(0);" target="_blank">zebra</a></p>
+        </footer>
+    </div>
+</body>
+</html>
+<script>
+    var page = 1;//当前页
+    Load();//加载数据
+    function Load(){
+        var content = $('.neirong').val();//查询条件
+        // console.log(content);
+        $.ajax({
+            url:"__CONTROLLER__/ajaxindex/",
+            data:{
+                page:page,
+                content:content
+            },
+            type:'POST',
+            dataType:'JSON',
+            success:function(response){
+                // alert(response.list);
+                  $('.list').html(response.list);  
+                }
+            
+        })
+       LoadXinxi(); 
+    }
+    function LoadXinxi(){
+        var str ='';
+        var minys =1;
+         maxys =1;
+        var content = $(".neirong").val();
+        //查询总页数
+        $.ajax({
+            async: false,
+            url:"__CONTROLLER__/count/",
+            data:{
+                content:content
+            },
+            type:'POST',
+            dataType:"TEXT",
+            success:function(response){
+                maxys = response;
+                // console.log(maxys);
+            }
+        });
+        // console.log(maxys);
+        
+        str += "<a class='prev'>上一页</a>";
+
+        for (var i = page-2;i < page+3; i++) {
+             if ( i >= minys && i <= maxys) {
+                 if (i==page) {
+                     str +="<span class = 'dangqian current' bs ='"+i+"'>"+i+"</span>";
+                 }else{
+                     str +="<a class = 'lis' bs ='"+i+"'>"+i+"</a>"
+                 }
+             }   
+        }
+        str += "<a class = 'next'>下一页</a>"
+        str += "<span class ='rows'>总共：" +maxys+ "页</span>";
+        $('.yahoo2').html(str);
+        $(".prev").click(function() {
+                page = page - 1;
+                if(page < 1) {
+                    page = 1;
+                }
+                Load(); //加载数据
+                LoadXinxi(); //加载分页信息
+            })
+            //给下一页加点击事件
+        $(".next").click(function() {
+                page = page + 1;
+                if(page > maxys) {
+                    page = maxys;
+                }
+                Load(); //加载数据
+                LoadXinxi(); //加载分页信息
+            })
+            //给中间的列表加事件
+        $(".lis").click(function() {
+            page = parseInt($(this).attr("bs"));
+            Load(); //加载数据
+            LoadXinxi(); //加载分页信息
+        })
+         $(".cz").click(function() {
+            Load(); //加载数据
+        })
+        
+    }
+</script>

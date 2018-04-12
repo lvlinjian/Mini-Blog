@@ -1,0 +1,69 @@
+
+    <!-- 右 -->
+    <div class="content">
+        <div class="header">
+            <h1 class="page-title">分派权限</h1>
+        </div>
+
+        <form action="" method="post">
+        <div class="well">
+        正在给<input type="text" name="role_name" value="{$role.role_name}" style="width: 120px"></input>分派权限
+                <input type="hidden" name="role_id" value="{$role.role_id}"></input>
+            <!-- table -->
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>顶级权限分类</th>
+                        <th>具体权限</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <br />
+                    <input type="checkbox" class="selectAll" value="" class="input-xlarge">全选
+                    <volist name="top" id="v">
+                    <tr class="success">
+                        <td><input class="top_level" type="checkbox" name="id[]" value="{$v.id}">{$v.auth_name}</td>
+                        <td>
+                        <volist name="second" id="vol">
+                            <if condition="$vol.pid eq $v.id ">
+                            <input class="second_level"  type="checkbox" name="id[]" value="{$vol.id}">{$vol.auth_name}
+                            </if>
+                        </volist>
+                        </td>
+                    </tr>
+                    </volist>
+                </tbody>
+            </table>
+            <button class="btn btn-primary" type="submit">保存</button>
+        </form>
+        </div>
+        <!-- footer -->
+        <footer>
+            <hr>
+            <p>© 2018 <a href="javascript:void(0);" target="_blank">zebra</a></p>
+        </footer>
+    </div>
+
+<script type="text/javascript">
+     $(".top_level").on('click',function(){
+            if(!$(this).attr('checked')){ 
+                $(this).parent().next().children().attr('checked',false); 
+            }
+        })
+        $(".second_level").on('click',function(){
+            if($(this).attr('checked')){
+               $(this).parent().prev().children().attr('checked',true); 
+            }
+        })
+    $(".selectAll").click(function(){
+        if(this.checked){
+            $("input").each(function(){
+                $(this).attr("checked",true);
+            });
+        }else{
+            $("input").each(function(){
+                $(this).attr("checked",false);
+            });
+        }
+    })
+</script>
