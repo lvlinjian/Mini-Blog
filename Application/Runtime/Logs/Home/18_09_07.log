@@ -1,0 +1,2091 @@
+[ 2018-09-07T10:41:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0260s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T10:41:45+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T10:41:46+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T10:42:04+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0260s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0590s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0290s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T10:42:04+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T10:42:04+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-09-07T10:42:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0230s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T10:42:22+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T10:42:22+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-09-07T10:42:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0330s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.1570s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T10:42:30+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T10:42:31+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T10:43:28+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0240s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0250s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-09-07T10:43:28+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T10:43:29+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T10:46:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0290s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T10:46:39+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T10:46:40+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T12:27:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0240s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.1940s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.3600s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0280s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T12:27:14+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:27:15+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:27:43+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0400s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0280s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.2470s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:27:43+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T12:27:44+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:27:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.1020s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.1930s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.1590s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:27:52+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-09-07T12:27:53+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:28:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0250s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.1640s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.3280s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:28:12+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:28:13+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T12:42:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0300s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0240s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:42:40+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:42:41+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T12:45:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0280s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0310s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0280s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:45:54+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:45:55+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T12:46:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0260s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T12:46:57+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:46:58+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T12:47:18+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0300s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0590s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0280s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:47:18+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T12:47:19+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T12:48:01+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0250s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0570s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 93 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:48:01+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T12:48:02+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:11:18+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0250s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0560s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 92 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 148 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:11:18+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:11:19+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:11:34+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0260s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0550s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0280s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 92 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 148 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:11:34+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:11:35+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:11:42+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0290s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0560s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 92 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 148 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:11:42+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:11:43+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:14:38+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0240s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0250s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 59 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 144 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:14:39+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:14:39+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:14:58+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0240s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0300s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 59 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 144 行.
+NOTIC: [8] Undefined index: manager_info F:\WAMP\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:14:58+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:14:59+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:23:07+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0290s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0250s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:23:07+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:23:08+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:23:30+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0260s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0570s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:23:30+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:23:31+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-09-07T13:25:17+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0230s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0590s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:25:17+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:25:18+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:28:31+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0270s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0600s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0280s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:28:31+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:28:32+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:29:42+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0250s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0550s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:29:42+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-09-07T13:29:43+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:29:45+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0250s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0560s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0250s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:29:45+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:29:45+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:30:02+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0260s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0390s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:30:02+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-09-07T13:30:03+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:31:16+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0240s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-09-07T13:31:16+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:31:17+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:33:10+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0270s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0580s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0290s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:33:10+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2018-09-07T13:33:11+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:33:39+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0460s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0330s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,5   [ RunTime:0.0600s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0280s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-09-07T13:33:39+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:33:40+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-09-07T13:49:04+08:00 ] 127.0.0.1 /home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0280s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,10   [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0250s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:49:04+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:49:05+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:50:35+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0260s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,10   [ RunTime:0.0590s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0590s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:50:35+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:50:36+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:55:24+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0230s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,10   [ RunTime:0.0660s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0320s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:55:24+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:55:25+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:55:36+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:58:23+08:00 ] 127.0.0.1 /Home/Index/index.html?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0280s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0310s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 10,10   [ RunTime:0.0350s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0390s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:58:23+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-09-07T13:58:24+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:58:32+08:00 ] 127.0.0.1 /Home/Index/index.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0250s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,10   [ RunTime:0.0620s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:58:32+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:58:33+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T13:58:58+08:00 ] 127.0.0.1 /Home/Index/index.html?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0850s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.1780s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.1000s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,10   [ RunTime:0.1510s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.2300s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:58:59+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:58:59+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:59:04+08:00 ] 127.0.0.1 /Home/Index/index.html?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0300s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 10,10   [ RunTime:0.0350s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0290s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:59:04+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:59:05+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-09-07T13:59:54+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0250s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,10   [ RunTime:0.0590s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0290s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:59:54+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T13:59:55+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-07T14:00:34+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0680s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0330s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0370s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 0,10   [ RunTime:0.0670s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T14:00:34+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T14:00:35+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T14:00:37+08:00 ] 127.0.0.1 /Home/Index/index.html?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( POSITION('tpshop' IN `url`) ) LIMIT 1   [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `zebra_article` [ RunTime:0.0270s ]
+SQL: SELECT `title`,`id` FROM `zebra_article` WHERE ( shenhe = 1 ) ORDER BY update_time  desc LIMIT 10   [ RunTime:0.0270s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `zebra_article` WHERE ( shenhe = 1 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT a.*,u.nickname FROM zebra_article a left join zebra_manager as u on a.user_id = u.id  WHERE ( shenhe = 1 ) ORDER BY a.update_time  desc LIMIT 10,10   [ RunTime:0.0360s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id asc LIMIT 50   [ RunTime:0.0310s ]
+NOTIC: [8] Undefined variable: shenhedata F:\WAMP\tpshop\Application\Home\Controller\IndexController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T14:00:37+08:00 ] 127.0.0.1 /Home/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-07T14:00:38+08:00 ] 127.0.0.1 /Home/Index/api_tq?city=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

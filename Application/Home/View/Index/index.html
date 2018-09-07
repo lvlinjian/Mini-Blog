@@ -1,16 +1,25 @@
-
-          <!-- 新模块往这里写 -->
+<!-- 页面关键词 keywords -->
+<meta name="keywords" content="斑马缘,博客园,斑马缘博客园,博客园平台,miniblog,miniblog.top">
+<!-- 页面描述内容 description -->
+<meta name="description" content="‘斑马缘’是一个迷你博客园(平台)，由项目负责人@油果,和他的团队们“zebra”开发小组共同完成以及维护的开源项目。他们的服务宗旨是：提供免费的入驻博客园服务，享受免费的博文发布以及博文管理服务！‘斑马缘’欢迎您的入驻！">
+<!-- 新模块往这里写 -->
 <!-- 博文 情景模块 begin-->
 <volist name="data" id="v">
-<div class="panel">
-    <div class="panel-heading">
-    <span class="panel-title">Title：{$v.title}<span class="pull-right">{$v.pubtime} &#9674; 访问量：{$count} &#9674; Author: NULL</span></span>
-    </div>
-    <div class="panel-body clearfix"><!-- clearfix清除浮动、pull-left左浮动、pull-right右浮动 -->
-    <p class="lead">&emsp;&emsp;{$v.content}</p>
-    </div>
-</div>
+  <div class="panel" style="background-color:#f6f6f6;">
+      <div class="panel-heading">
+      <span class="panel-title">Title：<a href="{:U('Home/Index/detail')}?id={$v.id}">{$v.title}</a><span class="pull-right">Create：{$v.create_time} &#9674; 访问量：{$v.hits}</span></span>
+      </div>
+      <div class="panel-body clearfix"><!-- clearfix清除浮动、pull-left左浮动、pull-right右浮动 -->
+      <p class="lead">
+        <small>UpDate：{$v.update_time}</small><br>
+        <small>Author: {$v.nickname}&emsp;点赞：{$v.zan} &emsp;<del>评论：0 </del></small><span class="pull-right"><a href="{:U('Home/Index/detail')}?id={$v.id}">查看全文</a></span>
+        <hr>{$v.content}
+      </p>
+      </div>
+  </div>
 </volist>
+
+</article><!-- end-markdown-body -->
 <span class="text-center"><h4>{$page}</h4></span>
         </div><!--/.col-xs-12.col-sm-9-->
         
@@ -72,4 +81,29 @@ $(document).ready(function(){
 // 控制富文本内容中较大图片的响应式支持效果
   $("div p img").addClass("img-responsive");
   // $(".zccode").removeClass("img-responsive");
+  /**
+   * 友情链接访问量统计
+   * @author TabKey9 <Admin@tlip.cn>
+   * @date        2018-09-05
+   * @param string id 链接ID
+   * @return json 执行结果
+   */
+  function clickLink(id){
+    $.ajax({
+
+        'url':'__CONTROLLER__/clickLink',
+
+        'type':'get',
+
+        'data':'id=' + id,
+
+        'dataType':'json',
+
+        'success':function(response){
+
+             console.log(response);
+        },
+
+    }); 
+  }
 </script>

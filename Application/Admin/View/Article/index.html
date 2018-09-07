@@ -1,70 +1,73 @@
+<!-- 新模块往这里写 -->
+<!-- 博文 情景模块 begin-->
+<!-- markdown-body -->
+  <!-- 面包屑导航 -->
+  <ol class="breadcrumb glyphicon glyphicon-folder-open">
+    <li><a href="{:U('Admin/Index/index')}">Admin</a></li>
+    <li><a href="{:U('Admin/Article/index')}">Article</a></li>
+    <li class="active">index</li>
+  </ol>
+  <div class="panel panel panel-info">
+      <div class="panel-heading">
+      <span class="panel-title">富文本模式 - lists<span class="pull-right"><a class="btn btn-heading" href="__CONTROLLER__/add">新增</a></span></span>
+      </div>
+      <div class="panel-body clearfix"><!-- clearfix清除浮动、pull-left左浮动、pull-right右浮动 -->
 
-    <!-- 右 -->
-    <div class="content">
-        <div class="header">
-            <h1 class="page-title">文章列表</h1>
-        </div>
-
-        <div class="well">
-            <!-- search button -->
-            <form action="" method="get" class="form-search">
-                <div class="row-fluid" style="text-align: left;">
-                    <div class="pull-left span4 unstyled">
-                        <p> 文章名称：<input class="input-medium" name="" type="text"></p>
-                    </div>
-                </div>
-                <button type="submit" class="btn">查找</button>
-                <a class="btn btn-primary" href="__CONTROLLER__/add">新增</a>
-            </form>
-        </div>
         <div class="well">
             <!-- table -->
             <table class="table table-bordered table-hover table-condensed">
                 <thead>
                     <tr>
-                        <th>文章编号</th>
-                        <th>文章名称</th>
-                        <th>文章分类</th>
-                        <th>添加时间</th>
-                        <th>点击量</th>
-                        <th>详细内容</th>
+                        <th style="width:50px">序号</th>
+                        <th>标题</th>
+                        <th style="width:80px">分类</th>
+                        <th style="width:20%">时间</th>
+                        <th>MD</th>
+                        <th style="width:70px">文章状态</th>
+                        <th style="width:20%">操作</th>
                     </tr>
                 </thead>
                 <tbody>
                     <volist name="data" key="k" id="v">
                         <tr class="info">
-                            <td style="width:60px">{$v.id}</td>
-                            <td ><a href="javascript:void(0);">{$v.title}</a></td>
-                            <td style="width:60px">{$v.cate_id}</td>
-                            <td style="width:20%">{$v.pubtime}</td>
-                            <!-- <td>{$v.content}</td> -->
-                            
-                            <td style="width:60px">{$v.hits}</td>
+                            <td>{$v.id}</td>
+                            <td ><a href="{:U('Admin/Index/detail')}?id={$v.id}">{$v.title}</a></td>
+                            <td>{$v.cate_name}</td>
+                            <td>{$v.update_time}</td>
+                            <td>{$v.md}</td>
+                            <td>
+                                <if condition="$v.shenhe eq 0">
+                                    <a href="javascript:void(0);" onclick="if(confirm('审核通过？')) location.href='__CONTROLLER__/check/id/{$v.id}/shenhe/1'">待审核</a>
+                                <elseif condition="$v.shenhe eq 1"/>
+                                    <a href="javascript:void(0);" onclick="if(confirm('撤销审核状态？')) location.href='__CONTROLLER__/check/id/{$v.id}/shenhe/0'">已审核</a>
+                                <elseif condition="$v.shenhe eq 2"/>
+                                    <a href="javascript:void(0);" onclick="if(confirm('解密？')) location.href='__CONTROLLER__/check/id/{$v.id}/shenhe/0'">已加密</a>
+                                <elseif condition="$v.shenhe eq 3"/>已拉黑
+                                <else />已删除
+                                </if>
+                            </td>
                             <td >
-                                <a href="__CONTROLLER__/edit/id/{$v.id}"> 编辑 </a>
-                                <a href="javascript:void(0);" onclick="if(confirm('确认删除？')) location.href='__CONTROLLER__/del/id/{$v.id}'"> 删除 </a>
+                                <a href="__CONTROLLER__/edit/id/{$v.id}"> 编辑 </a>&nbsp;
+                                <a href="javascript:void(0);" onclick="if(confirm('加个密码锁起来？')) location.href='__CONTROLLER__/check/id/{$v.id}/shenhe/2'">加密</a>&nbsp;
+                                <a href="javascript:void(0);" onclick="if(confirm('拉进小黑屋打一顿？')) location.href='__CONTROLLER__/check/id/{$v.id}/shenhe/3'">拉黑</a>&nbsp;
+                                <a href="javascript:void(0);" onclick="if(confirm('确认删除？')) location.href='__CONTROLLER__/check/id/{$v.id}/shenhe/4'"> 删除 </a>
                             </td>
                         </tr>
                     </volist>
                 </tbody>
             </table>
             <!-- pagination -->
-            <div class="pagination">
-                <ul>
-                    <li><a href="#">Prev</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">Next</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- footer -->
-        <footer>
-            <hr>
-            <p>© 2018 <a href="javascript:void(0);" target="_blank">zebra</a></p>
-        </footer>
-    </div>
-</body>
-</html>
+            <ul class="pagination">
+                <li><a href="#">Prev</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">Next</a></li>
+                <!-- class="disabled"  class="active" -->
+            </ul>
+        </div><!-- well end -->
+
+      </div>
+  </div>
+</div><!--/.col-xs-12.col-sm-9-->

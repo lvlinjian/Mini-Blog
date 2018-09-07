@@ -1,53 +1,45 @@
-   <!--右侧主操作区-->
-    <div class="main-wrap">
-
-        <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i>
-                <a href="?p=back">首页</a>
-                <span class="crumb-step">&gt;</span>
-                <span class="crumb-name">文章管理</span>
-                <span class="crumb-step">&gt;</span>
-                <span class="crumb-name">添加文章</span>
-            </div>
-        </div>
-        <div class="result-wrap">
-            <div class="result-content">
-                <form action="?p=back&c=Blog&a=Insert" method="post" id="myform" >
-                    <table class="insert-tab" width="100%">
-                        <tbody>
-                            <tr>
-                                <th><i class="require-red">*</i>所属分类：</th>
-                                <td>
-                                   <select name="category_id">
-                                       <option value="">请选择</option>
-                                       <option value='1'>基础知识</option><option value='2'>MVC框架技术</option><option value='3'>生活感悟</option><option value='4'>技术前沿</option><option value='6'>新闻资讯</option>                                   </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><i class="require-red">*</i>标题：</th>
-                                <td>
-                                    <input class="common-text required" name="blog_title" size="50" value="" type="text">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><i class="require-red">*</i>内容：</th>
-                                <td>
-                                    <textarea name="blog_content" class="common-textarea" cols="100" rows="20"></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <td>
-                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
-                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
-            </div>
-
+<!-- 新模块往这里写 -->
+<!-- 博文 情景模块 begin-->
+<!-- markdown-body -->
+  <!-- 面包屑导航 -->
+  <ol class="breadcrumb glyphicon glyphicon-folder-open">
+    <li><a href="{:U('Admin/Index/index')}">Admin</a></li>
+    <li><a href="{:U('Admin/Blog/index')}">Blog</a></li>
+    <li class="active">add</li>
+  </ol>
+        <div class="header">
+            <h1 class="page-title">MarkDown模式 - add</h1>
         </div>
 
-    </div>
-    <!--/右侧主操作区-->
+        <!-- add form -->
+        <form action="" method="post" id="tab" enctype="multipart/form-data">
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#basic" data-toggle="tab">基本信息</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="basic">
+                    <div class="well">
+                        <label>标题：</label>
+                        <input type="text" name="title" value="" class="input-xlarge"></input>&emsp;
+                        <label>分类： </label>
+                        <select name="cate_id">
+                            <volist name="data" id="v">
+                            <option value="{$v.id}">{$v.cate_name}</option>
+                            </volist>
+                        </select>&emsp;
+                        <button class="btn btn-primary" type="submit">提交</button>
+                    </div><!-- end well -->
+
+                    <div class="tab-pane fade in" id="desc">
+                        <div class="well">
+                            <label>内容：</label>
+                            <textarea style="width: 95%;height: 300px;" name="content" class="input-xlarge"></textarea>
+                       </div><!-- end well -->
+                    </div> 
+                </div>
+                <input type="hidden" name="md" value="1"></input>
+                <input type="hidden" name="user_id" value="{$Think.session.manager_info.id}"></input>
+            </div>
+        </form><!-- add form end -->
+
+</div><!--/.col-xs-12.col-sm-9-->

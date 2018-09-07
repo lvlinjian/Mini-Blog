@@ -1,15 +1,74 @@
+<!-- 新模块往这里写 -->
+<!-- 博文 情景模块 begin-->
+<!-- markdown-body -->
+  <!-- 面包屑导航 -->
+  <ol class="breadcrumb glyphicon glyphicon-folder-open">
+    <li><a href="{:U('Admin/Index/index')}">Admin</a></li>
+    <li><a href="{:U('Admin/Index/index')}">Index</a></li>
+    <li class="active">index</li>
+  </ol>
+<!-- markdown-body -->
+<article class="markdown-body">
+<!-- 判断是否有等待审核的文章 -->
+<if condition="$shenhedata.title == true">
+  <div class="panel">
+      <div class="panel-heading">
+      <span class="panel-title">{$shenhedata.title}<span class="pull-right">UpDate：{$shenhedata.update_time}</span></span>
+      </div>
+      <div class="panel-body clearfix"><!-- clearfix清除浮动、pull-left左浮动、pull-right右浮动 -->
+      <p class="lead">
+        {$shenhedata.content}
+      </p>
+      </div>
+  </div>
+</if>
 
-    <!-- 右 -->
-    <div class="content">
-        <!-- header -->
-        <div class="header">
-            <h1 class="page-title">This is test!</h1>
-        </div>
-        <!-- highchat show -->
-        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-        <!-- footer -->
-        <footer>
-            <hr>
-            <p>© 2018 <a href="javascript:void(0);" target="_blank">zebra</a></p>
-        </footer>
-    </div>
+
+<volist name="data" id="v">
+  <div class="panel" style="background-color:#f6f6f6;">
+      <div class="panel-heading">
+      <span class="panel-title">Title：<a href="{:U('Admin/Index/detail')}?id={$v.id}">{$v.title}</a><span class="pull-right">Create：{$v.create_time} &#9674; 访问量：{$v.hits}</span></span>
+      </div>
+      <div class="panel-body clearfix"><!-- clearfix清除浮动、pull-left左浮动、pull-right右浮动 -->
+      <p class="lead">
+        <small>UpDate：{$v.update_time}</small><br>
+        <small>Author: {$v.nickname}&emsp;点赞：{$v.zan} &emsp;<del>评论：0 </del></small><span class="pull-right"><a href="{:U('Admin/Index/detail')}?id={$v.id}">查看全文</a></span>
+        <hr>{$v.content}
+      </p>
+      </div>
+  </div>
+</volist>
+
+</article><!-- end-markdown-body -->
+  <br>
+  <span class="well well-sm">黑名单文章汇总：</span>
+  <hr>
+  <div class="list-group">
+    <span class="list-group-item disabled"> Cras justo odio</span> 
+  </div>
+
+<span class="text-center"><h4>{$page}</h4></span>
+</div><!--/.col-xs-12.col-sm-9-->
+        
+
+<script type="text/javascript">
+// 情景主题数组
+var Colors = [];
+var ColorArray = [];
+for (var i = $('.panel').length - 1; i >= 0; i--) {
+    if(ColorArray.length == 0){
+        ColorArray = ['success', 'info', 'warning', 'danger'];
+    } //, 'primary' 蓝色背景，白色字体不支持响应式，或者说我没找到解决方案
+    var rand = Math.floor(Math.random() * ColorArray.length);
+    var Color = ColorArray[rand];
+    ColorArray.splice(rand,1);
+    Colors.push(Color);
+}
+// 随机主题Color
+$(".panel").each(function(index){
+      $(this).addClass('panel-' + Colors[index]); 
+});         
+// 控制富文本内容中较大图片的响应式支持效果
+$("div p img").addClass("img-responsive");
+// $(".zccode").removeClass("img-responsive");
+</script>

@@ -2,6 +2,13 @@
 namespace Admin\Controller;
 use Think\Controller;
 class CommonController extends Controller{
+	/**
+	 * 2018-4-14 @油果 在这儿定义一个受保护的类属性，为了让子类拿到已经登录的用户id
+	 * @参数	$user_id	用户ID
+	 * @参数	$nickname	用户昵称
+	 */
+	protected $user_id;
+	protected $nickname;
 	public function __construct(){
 		// 调用父类构造方法
 		parent::__construct();
@@ -13,6 +20,10 @@ class CommonController extends Controller{
 			$this->success('未登录！页面跳转中...',U('Admin/Login/index'), 3 );
 			die;// 如果不die掉的话，会显示多余的信息
 		}
+		// 把登录的user_id赋值给受保护的类属性
+		$this->user_id = session('manager_info.id');
+		$this->nickname = session('manager_info.nickname');
+		// dump(session('manager_info'));die;
 		$this->getauth();
 
 		$this -> checkauth();

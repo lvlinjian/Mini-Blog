@@ -1,0 +1,266 @@
+[ 2018-09-05T00:04:35+08:00 ] 127.0.0.1 /admindebug.php/admin/links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-05T00:25:13+08:00 ] 127.0.0.1 /admindebug.php/admin/links/addlink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0260s ]
+NOTIC: [8] Use of undefined constant is_post - assumed 'is_post' F:\WAMP\tpshop\Application\Admin\Controller\LinksController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: INSERT INTO `zebra_link` (`update`,`adddate`) VALUES ('1536078313','1536078313') [ RunTime:0.0310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-05T00:28:58+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0250s ]
+ERR: 参数错误或者未定义:id
+
+[ 2018-09-05T00:29:28+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLinks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0270s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id desc LIMIT 10   [ RunTime:0.0270s ]
+NOTIC: [8] Use of undefined constant success - assumed 'success' F:\WAMP\tpshop\Application\Admin\Controller\LinksController.class.php 第 72 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-05T00:29:31+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLinks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0330s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id desc LIMIT 10   [ RunTime:0.0320s ]
+NOTIC: [8] Use of undefined constant success - assumed 'success' F:\WAMP\tpshop\Application\Admin\Controller\LinksController.class.php 第 72 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-05T00:30:19+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0260s ]
+ERR: 参数错误或者未定义:id
+
+[ 2018-09-05T00:30:48+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0700s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0680s ]
+ERR: 参数错误或者未定义:id
+
+[ 2018-09-05T00:31:42+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0270s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0500s ]
+ERR: 参数错误或者未定义:id
+
+[ 2018-09-05T00:31:57+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0230s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0320s ]
+
+[ 2018-09-05T00:32:19+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0970s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0920s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.1280s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.1090s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and deldate=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zebra_link` WHERE ( id= and deldate=0 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and deldate=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zebra_link` WHERE ( id= and deldate=0 ) LIMIT 1  
+
+[ 2018-09-05T00:32:28+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.1630s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.1180s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.1620s ]
+
+[ 2018-09-05T00:32:44+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0470s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-09-05T00:32:47+08:00 ] 127.0.0.1 /admindebug.php/admin/links/getLink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0770s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-05T12:48:28+08:00 ] 127.0.0.1 /admindebug.php/admin/links/clickaccess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-05T12:49:16+08:00 ] 127.0.0.1 /Admin/links/clickaccess
+ERR: 非法操作:clickaccess
+
+[ 2018-09-05T12:49:28+08:00 ] 127.0.0.1 /admindebug.php/Admin/links/clickaccess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0260s ]
+ERR: 非法操作:clickaccess
+
+[ 2018-09-05T17:30:46+08:00 ] 127.0.0.1 /admin/links
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0250s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id desc LIMIT 10   [ RunTime:0.0380s ]
+NOTIC: [8] Use of undefined constant success - assumed 'success' F:\WAMP\tpshop\Application\Admin\Controller\LinksController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-09-05T18:00:30+08:00 ] 127.0.0.1 /admin/links
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zebra_auth` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0310s ]
+SQL: SELECT * FROM `zebra_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `zebra_link` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `zebra_link` WHERE ( deldate=0 ) ORDER BY id desc LIMIT 10   [ RunTime:0.0260s ]
+NOTIC: [8] Use of undefined constant success - assumed 'success' F:\WAMP\tpshop\Application\Admin\Controller\LinksController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

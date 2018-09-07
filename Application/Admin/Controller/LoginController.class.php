@@ -7,7 +7,7 @@ class LoginController extends Controller{
 
 		//一个方法处理两个逻辑
 		if(IS_POST){
-			//post请求  表单提交
+/*			//post请求  表单提交
 			//接收数据
 			$username = I('post.username');
 			$password = I('post.password');
@@ -46,7 +46,7 @@ class LoginController extends Controller{
 			}else{
 				//登录失败
 				$this->error('用户名或密码错误');
-			}
+			}*/
 		}else{
 			//页面展示
 			//①如果已经登录,直接跳转到后台首页
@@ -94,7 +94,7 @@ class LoginController extends Controller{
 
 	//ajax登录方法
 	public function ajaxlogin(){
-
+		// echo "string";die;
 		//post请求  表单提交
 		//接收参数
 		$username = I('post.username');

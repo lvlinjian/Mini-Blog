@@ -13,7 +13,7 @@ class ArticleModel extends Model{
 		// dump($upload);die;
 		// dump($_FILES['goods_logo']);
 		$res =$upload -> uploadOne($_FILES['goods_logo']);
-		// dump($res);
+		// dump($res);die;
 		if(!$res){
 			$this -> error = $upload -> getError();
 			return false;
@@ -25,5 +25,22 @@ class ArticleModel extends Model{
 		$thumb_logo = UPLOAD_PATH . $res['savepath'].'thumb_' . $res['savename'];
 		$data['goods_logo'] = $thumb_logo;
 		return true;
+	}
+	/**
+	 * 更新操作，只是针对部分字段进行局部更新。
+	 * @author TabKey9 <Admin@tlip.cn>
+	 * @date        2018-08-22
+	 * @param array $where 条件可以是数组也可以是字符串
+	 * @return string 返回一个状态
+	 */
+	public function checkM($where){
+		// dump($where);die;
+		// echo "string";return;
+		$res = $this->setField($where);
+		if ($res) {
+			return $res;
+		}else{
+			return $res;
+		}
 	}
 }

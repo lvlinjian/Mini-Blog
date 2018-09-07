@@ -1,0 +1,48 @@
+<!-- 页面关键词 keywords -->
+<meta name="keywords" content="斑马缘,博客园,斑马缘博客园,博客园平台,miniblog,miniblog.top">
+<!-- 页面描述内容 description -->
+<meta name="description" content="‘斑马缘’是一个迷你博客园(平台)，由项目负责人@油果,和他的团队们“zebra”开发小组共同完成以及维护的开源项目。他们的服务宗旨是：提供免费的入驻博客园服务，享受免费的博文发布以及博文管理服务！‘斑马缘’欢迎您的入驻！">
+<!-- 新模块往这里写 -->
+<!-- 博文 情景模块 begin-->
+<!-- markdown-body -->
+<article class="markdown-body">
+
+  <div class="panel">
+      <div class="panel-heading">
+      <span class="panel-title">Title：{$top1.title}<span class="pull-right">Create：{$top1.create_time} &#9674; 访问量：{$top1.hits}</span></span>
+      </div>
+      <div class="panel-body clearfix"><!-- clearfix清除浮动、pull-left左浮动、pull-right右浮动 -->
+      <p class="lead">
+        <small>UpDate：{$top1.update_time}</small><br>
+        <small>Author: {$top1.nickname}&emsp;点赞：{$top1.zan} &emsp;<del>评论：0 </del></small>
+        <hr>{$top1.content}
+      </p>
+      </div>
+  </div>
+
+</article><!-- end-markdown-body -->
+        </div><!--/.col-xs-12.col-sm-9-->
+        
+
+<script type="text/javascript">
+// 情景主题数组
+var Colors = [];
+var ColorArray = [];
+for (var i = $('.panel').length - 1; i >= 0; i--) {
+    if(ColorArray.length == 0){
+        ColorArray = ['success', 'info', 'warning', 'danger'];
+    } //, 'primary' 蓝色背景，白色字体不支持响应式，或者说我没找到解决方案
+    var rand = Math.floor(Math.random() * ColorArray.length);
+    var Color = ColorArray[rand];
+    ColorArray.splice(rand,1);
+    Colors.push(Color);
+}
+// 随机主题Color
+$(".panel").each(function(index){
+      $(this).addClass('panel-' + Colors[index]); 
+});         
+
+// 控制富文本内容中较大图片的响应式支持效果
+  $("div p img").addClass("img-responsive");
+  // $(".zccode").removeClass("img-responsive");
+</script>

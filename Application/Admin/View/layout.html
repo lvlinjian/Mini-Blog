@@ -1,59 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>后台管理系统</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="__PUBLIC__/Admin/css/main.css" rel="stylesheet" type="text/css"/>
-    <link href="__PUBLIC__/Admin/css/page.css" rel="stylesheet" type="text/css"/>
-    <link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="__PUBLIC__/Admin/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
-    <script src="__PUBLIC__/Admin/js/jquery-1.8.1.min.js"></script>
-    <script src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <!-- 上 -->
-    <div class="navbar">
-        <div class="navbar-inner">
-            <div class="container-fluid">
-                <ul class="nav pull-right">
-                    <li id="fat-menu" class="dropdown">
-                        <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="icon-user icon-white"></i> {:session(manager_info)['nickname']}
-                            <i class="icon-caret-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="/Admin/manager/edit/id/{$Think.session.manager_info.id}">修改信息</a></li>
-                            <li class="divider"></li>
-                            <li><a tabindex="-1" href="/Admin/login/logout">安全退出</a></li>
-                        </ul>
-                    </li>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap框架 begin-->
+    <link href="__PUBLIC__/Home/images/zebra50.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/offcanvas.css">
+    <script type="text/javascript" src="__PUBLIC__/bootstrap/js/jq.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/bootstrap/js/offcanvas.js"></script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+      /* 导航鼠标移动效果 */
+      .navbar-nav li:hover{
+          display: block;      
+      }      
+    </style>
+    <title>斑马缘</title>
+  </head>
+<body style="background-image:url(__PUBLIC__/Home/images/bg1.png);">
+<!--首页静态导航栏 begin-->
+    <!-- Static navbar 首页静态 导航栏 -->
+    <nav class="navbar navbar-default navbar-static-top" style="background-color:#99CCCC;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="zebra_logo" src="__PUBLIC__/Home/images/zebra50.ico">
+          <a class="navbar-brand glyphicon  glyphicon-home" href="{:U("Admin/Index/index")}">&nbsp;{$Think.session.manager_info.nickname} 的博客</a>
+        </div><!-- end navbar-header -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="glyphicon glyphicon-align-left" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">&nbsp;管理 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <volist name="Think.session.top" key="k" id="vo">
+                  &nbsp;<a href="#dropdown-menu{$k}" class="nav-header collapsed glyphicon glyphicon-th-list" data-toggle="collapse">&nbsp;{$vo.auth_name}</a>
+                  <li class="divider"></li>
+                  <ul id="dropdown-menu{$k}" class="nav nav-list collapse in">
+                    <volist name="Think.session.second" kev="key" id="vol">
+                    <if condition=" $vol.pid eq $vo.id && $vol.auth_a eq 'index' ">
+                    <li><a class="glyphicon glyphicon-chevron-right" href="__MODULE__/{$vol.auth_c}/{$vol.auth_a}.html">&nbsp;{$vol.auth_name}</a></li>
+                    </if>
+                    </volist>
+                  </ul>
+                </volist>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li role="presentation"><a class="glyphicon glyphicon-home" href={:U("Home/Index/index")}>&nbsp;前台</a></li>
+            <li id="fat-menu" class="dropdown">
+                <a href="#" id="drop3" role="button" class="dropdown-toggle glyphicon glyphicon-cog" data-toggle="dropdown">
+                    <i class="icon-user icon-white"></i>
+                    {$Think.session.manager_info.nickname}
+                    <i class="icon-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="glyphicon glyphicon-chevron-right" tabindex="-1" href="/Admin/manager/edit/id/{$Think.session.manager_info.id}">&nbsp;修改信息</a></li>
+                    <li class="divider"></li>
+                    <li><a class="glyphicon glyphicon-chevron-right" tabindex="-1" href="/Admin/login/logout">&nbsp;安全退出</a></li>
                 </ul>
-                <a class="brand" href="/Admin/Index/index"><span class="first">后台管理系统</span></a>
-                <ul class="nav">
-                    <li class="active"><a href="/Home/Index/index">前台首页</a></li>
-                    <li><a href={:U("Server/info")}>服务器信息</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    <!-- 左 -->
-    <div class="sidebar-nav">
-        <volist name="Think.session.top" key="k" id="vo">
-        <a href="#error-menu{$k}" class="nav-header collapsed" data-toggle="collapse"><i class="icon-exclamation-sign"></i>{$vo.auth_name}</a>
-        <ul id="error-menu{$k}" class="nav nav-list collapse in">
-            <volist name="Think.session.second" kev="key" id="vol">
-            <if condition=" $vol.pid eq $vo.id && $vol.auth_a eq 'index' ">
-            <li><a href="__MODULE__/{$vol.auth_c}/{$vol.auth_a}.html">{$vol.auth_name}</a></li>
-            </if>
-            </volist>
-        </ul>
-        </volist>
-    </div>
+            </li>
+          </ul>
+        </div><!-- end navbar-collapse -->
+      </div><!-- end container -->
+    </nav><!-- navbar -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">菜单</button>
+          </p>
+          <div class="alert alert-warning" role="alert">系统公告：欢迎体验新UI风格！
+            <!-- 添加可关闭的js按键效果 -->
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
 {__CONTENT__}
 
+<!--右侧菜单栏 begin-->
+            <!-- this is 右侧响应式支持 -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+
+<!-- 右边侧边栏第1个展区 -->
+      <div class="thumbnail" style="background-color:#f6f6f6;">
+        <img width="100%" src="/Static/cs.jpg" alt="bg:NULL">
+        <div class="caption">
+          <!-- User Logo Css figure begin -->
+          <figure style="width: 100px;height: 100px;margin-left: 25%;margin-top: -25%;">
+          <img class="img-circle img-thumbnail" src="/Static/userlogo.png" alt="userlogo">
+          </figure>
+          <ul class="list-group">
+            <h3><li class="list-group-item list-group-item-success glyphicon glyphicon-leaf">&nbsp;博主：{$Think.session.manager_info.nickname}</li></h3>
+            <li class="list-group-item list-group-item-warning glyphicon glyphicon-phone">&nbsp;手机<br>：{$Think.session.manager_info.phone}</li>
+            <li class="list-group-item list-group-item-danger glyphicon glyphicon-send">&nbsp;登录名<br>：{$Think.session.manager_info.username}</li>
+            <li class="list-group-item list-group-item-warning glyphicon glyphicon-envelope">&nbsp;E-mail<br>：{$Think.session.manager_info.email}</li>
+            <li class="list-group-item list-group-item-danger glyphicon glyphicon-time">&nbsp;创建时间<br>：{$Think.session.manager_info.create_time}</li>
+            <li class="list-group-item list-group-item-warning glyphicon glyphicon-time">&nbsp;上次退出时间<br>：{$Think.session.manager_info.update_time}</li>
+          </ul>
+        </div>
+      </div>
+
+<!-- 我的文章 -->
+    <div class="thumbnail" style="background-color:#f6f6f6;">
+      <img src="/Static/word1.jpg" alt="我的文章">
+      <div class="caption">
+        <label class="control-label">我的文章：</label>
+        <div>
+            <a href="javascript:void(0)">NULL</a><br>
+            <a href="javascript:void(0)">NULL</a><br>
+            <a href="javascript:void(0)">更多</a>
+        </div>
+      </div>
+    </div>
+
+<!-- end 右1 -->
+    <!--右侧菜单栏 end-->
+
+
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row row-offcanvas-->
+
+<!-- 底部 begin -->
+
+<footer class="footer" style="clear: both">
+  <p>斑马缘：&emsp;<a href=http://www.miitbeian.gov.cn/ target=_blank>京ICP备18012961号-1</a></p>
+</footer>
+    </div><!--  end container -->
 </body>
 </html>

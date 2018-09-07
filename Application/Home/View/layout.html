@@ -1,30 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="zh-CN">
+  <head>
     <meta charset="UTF-8">
-    <title>斑马缘博客园 - NULL</title>
-    <style type="text/css"></style>
-    <!-- 百度云观测 http://www.miniblog.top/ -->
-    <meta baidu-gxt-verify-token="e95e5061c6305eff6dc954d9969fa1a9">
-    <!-- https://miniblog.top/ -->
-	<meta baidu-gxt-verify-token="2690630927c254c8c3696bc786eda2af">
-<!--bootstrap框架 begin-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap框架 begin-->
+    <link href="__PUBLIC__/Home/images/zebra50.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/offcanvas.css">
+    <!-- 引入 github-markdown.css 样式 -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/md/github-markdown.css">
     <script type="text/javascript" src="__PUBLIC__/bootstrap/js/jq.js"></script>
     <script type="text/javascript" src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/bootstrap/js/offcanvas.js"></script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <style type="text/css">
-      .zebra_logo{
-        width:50px;
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
       }
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+      /* 导航鼠标移动效果 */
+      .navbar-nav li:hover{
+          display: block;
+      }      
     </style>
-    </head>
-<body>
+    <title>斑马缘</title>
+    <!-- 百度云观测 http://www.miniblog.top/ -->
+    <meta baidu-gxt-verify-token="e95e5061c6305eff6dc954d9969fa1a9">
+    <!-- 域名证书验证 https://miniblog.top/ -->
+    <meta baidu-gxt-verify-token="2690630927c254c8c3696bc786eda2af">
+  </head>
+<body style="background-image:url(__PUBLIC__/Home/images/bg1.png);">
 <!--首页静态导航栏 begin-->
     <!-- Static navbar 首页静态 导航栏 -->
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-static-top" style="background-color:#99CCCC;">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,16 +55,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img class="zebra_logo" src="__PUBLIC__/Home/images/zebra.jpg">
-          <a class="navbar-brand" href="javascript:void(0)">NULL 的博客</a>
+          <img class="zebra_logo" src="__PUBLIC__/Home/images/zebra50.ico">
+
+          <if condition="$Think.session.manager_info.nickname == false">
+            <a class="navbar-brand glyphicon glyphicon-home" href="{:U("Home/Index/index")}">&nbsp;斑马缘</a>
+          <else/>
+            <a class="navbar-brand glyphicon  glyphicon-home" href="{:U("Home/Index/index")}">&nbsp;{$Think.session.manager_info.nickname} 的博客</a>
+          </if>
+
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a class="glyphicon glyphicon-home" href="javascript:void(0)">首页</a></li>
-            <li><a class="glyphicon glyphicon-user" href="javascript:void(0)">关于</a></li>
-            <li><a class="glyphicon glyphicon-envelope" href="javascript:void(0)">联系</a></li>
+            <li><a class="glyphicon glyphicon-user" href="https://github.com/lvlinjian/Mini-Blog">&nbsp;关于</a></li>
+            <li><a class="glyphicon glyphicon-envelope" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=admin%40tlip%2ecn">&nbsp;入驻&nbsp;[审核]</a></li>
             <li class="dropdown">
-              <a class="glyphicon glyphicon-align-left" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+              <a class="glyphicon glyphicon-align-left" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">&nbsp;更多 <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="javascript:void(0)">NULL</a></li>
                 <li><a href="javascript:void(0)">NULL</a></li>
@@ -53,20 +80,26 @@
                 <li><a href="javascript:void(0)">NULL</a></li>
               </ul>
             </li>
+            <li>
+              <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="未完善...">
+                <button type="submit" class="btn btn-default">搜索</button>
+              </form>
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-                <if condition="$Think.session.manager_info == null ">
+                <if condition="$Think.session.manager_info == false">
                     <li role="presentation"><a  href="#myModal" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-edit"></span>&nbsp;注册</a></li>
-                    <li role="presentation" class="active"><a class="glyphicon glyphicon-user" href={:U("admin/login/index")}>登录</a></li>
+                    <li role="presentation"><a class="glyphicon glyphicon-user" href={:U("Admin/login/index")}>&nbsp;登录</a></li>
 
 
                 <else/>
-                    <li role="presentation"><a class="glyphicon glyphicon-user" href={:U("admin/index/index")}>后台管理</a></li>
-                    <li role="presentation" class="active"><a href="javacript:void(0);" target="_top" class="h">{$Think.session.manager_info.nickname}</a></li>
+                    <li role="presentation"><a class="glyphicon glyphicon-user" href={:U("Admin/index/index")}>&nbsp;后台管理</a></li>
+                    <li role="presentation"><a href="javacript:void(0);" target="_top" class="h">{$Think.session.manager_info.nickname}</a></li>
 
                 </if>
                 <span class="sr-only">(current)</span>
-            <li role="presentation"><a class="glyphicon glyphicon-off" href={:U("admin/login/logout")}>退出</a></li>
+            <li role="presentation"><a class="glyphicon glyphicon-off" href={:U("Admin/login/logout")}>&nbsp;退出</a></li>
           </ul>
 
             </div>
@@ -114,7 +147,7 @@
                             </span>
                         </div>
                     </div>
-                    <input type="hidden" name="id" value="{$_SESSION['id']}"/>
+                    <input type="hidden" name="id" value="{$Think.session.manager_info.id}"/>
 
 
                     <div class="form-group modal-footer">
@@ -134,7 +167,7 @@
 
         <div class="col-xs-12 col-sm-9">
           <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">侧边栏</button>
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">右侧栏</button>
           </p>
 {__CONTENT__}
 
@@ -143,25 +176,39 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
 
 <!-- 右边侧边栏第1个展区 -->
-    <div class="thumbnail">
-      <img width="100%" src="/Static/abc.gif" alt="bg:NULL">
-      <div class="caption">
-        <!-- User Logo Css figure begin -->
-        <figure style="width: 100px;height: 100px;margin-left: 25%;margin-top: -25%;">
-        <img class="img-circle img-thumbnail" src="/Static/userlogo.png" alt="userlogo">
-        </figure>
-        <h3>博主：NULL</h3>
-        <p><label class="control-label">文章：</label>
-          <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
-          <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
-          <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
-          <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
-          <a href="javascript:void(0)" class="btn btn-default" role="button">......</a>
-        </p>
+    <if condition="$Think.session.manager_info.nickname == false">
+      <div class="thumbnail" style="background-color:#f6f6f6;">
+        <div class="caption">
+          <label class="control-label">最新回复列表：</label>
+          <p>
+            <volist name="top10" id="t">
+              <a href="{:U('Home/Index/detail')}?id={$t.id}">{$t.title}</a><br>
+            </volist>
+          </p>
+        </div>
       </div>
-    </div>
+    <else/>
+      <div class="thumbnail" style="background-color:#f6f6f6;">
+        <img width="100%" src="/Static/abc.gif" alt="bg:NULL">
+        <div class="caption">
+          <!-- User Logo Css figure begin -->
+          <figure style="width: 100px;height: 100px;margin-left: 25%;margin-top: -25%;">
+          <img class="img-circle img-thumbnail" src="/Static/userlogo.png" alt="userlogo">
+          </figure>
+          <h3>博主：{$Think.session.manager_info.nickname}</h3>
+          <p><label class="control-label">文章：</label>
+            <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
+            <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
+            <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
+            <a href="javascript:void(0)" class="btn btn-default" role="button">NULL</a>
+            <a href="javascript:void(0)" class="btn btn-default" role="button">......</a>
+          </p>
+        </div>
+      </div>
+    </if>
+
 <!-- 这里展示天气 -->
-    <div class="thumbnail">
+    <div class="thumbnail" style="background-color:#f6f6f6;">
       <img src="/Static/tianqi.png" alt="和风天气">
       <div class="caption">
         <label class="control-label">由“<a href="https://www.heweather.com/price">和风天气</a>”提供服务</label>
@@ -176,18 +223,19 @@
     </div>
 
 <!-- 友情链接 -->
-    <div class="thumbnail">
+    <div class="thumbnail" style="background-color:#f6f6f6;">
       <img src="/Static/yqlj.jpg" alt="友情链接">
       <div class="caption">
-        <label class="control-label"><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=bmy%40miniblog%2etop">审核</a>&#8629;</label>
-        <div>
-          <a href="javascript:void(0)">空</a>
-        </div>
+        <label class="control-label"><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=admin%40tlip%2ecn">审核</a>&#8629;</label>
+        <br>链接 | 访问量 | 来访次数
+          <volist name="links" id="v">
+          <p><a href="{$v.url}" onclick="clickLink({$v.id});">{$v.explain}</a>&emsp;{$v.click}&emsp;{$v.returl}</p>
+          </volist>
       </div>
     </div>
 
 <!-- APP -->
-    <div class="thumbnail">
+    <div class="thumbnail" style="background-color:#f6f6f6;">
       <label class="control-label text-center">斑马缘安卓APP</label>
       <img src="/Static/app2.png" alt="app2.png">
       <span><a href="http://downloadpkg.apicloud.com/app/download?path=http://7zsxnk.com1.z0.glb.clouddn.com/9ac4fcc2c2e8fd1622fe1a1626a56723_d">下载：1.1M</a></span>
@@ -202,7 +250,7 @@
 <!-- 底部 begin -->
 
 <footer class="footer" style="clear: both">
-  <p>{$times}&emsp;<a href="http://webscan.360.cn/index/checkwebsite/url/www.miniblog.top"><img border="0" src="http://webscan.360.cn/status/pai/hash/09bb05ff282ee7db9b53b1fabd6c1724"/></a><hr><a href='__ROOT__'>“斑马缘”MiniBlog项目:LNMP+TP3+BS3+原创</a><br>Author: admin@tlip.cn&emsp;<a href=http://www.miitbeian.gov.cn/ target=_blank>京ICP备18012961号-1</a>&emsp;</p>
+  <p>{$times}&emsp;<hr><a href='https://github.com/lvlinjian/Mini-Blog'>“斑马缘”MiniBlog项目 - 开放源码</a><br>Author: admin@tlip.cn&emsp;<a href=http://www.miitbeian.gov.cn/ target=_blank>京ICP备18012961号-1</a>&emsp;</p>
 </footer>
     </div><!--  end container -->
 </body>

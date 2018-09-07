@@ -1,0 +1,52 @@
+<!-- 新模块往这里写 -->
+<!-- 博文 情景模块 begin-->
+<!-- markdown-body -->
+  <!-- 面包屑导航 -->
+  <ol class="breadcrumb glyphicon glyphicon-folder-open">
+    <li><a href="{:U('Admin/Index/index')}">Admin</a></li>
+    <li><a href="{:U('Admin/Blog/index')}">Blog</a></li>
+    <li class="active">add</li>
+  </ol>
+        <div class="header">
+            <h1 class="page-title">MarkDown模式 - edit</h1>
+        </div>
+
+        <!-- edit form -->
+        <form action="" method="post" id="tab" enctype="multipart/form-data">
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#basic" data-toggle="tab">基本信息</a></li>
+            </ul>   
+            <div class="tab-content">         
+                <div class="active" id="basic">
+
+                    <div class="well">
+                        <label>标题：</label>
+                        <input type="hidden" name="id" value="{$res.id}"></input>
+                        <input type="text" name="title" value="{$res.title}">&emsp;
+                        <label>分类： </label>
+                        <select name="cate_id">
+                            <volist name="cate" id="v">
+                            <option value="{$v.id}"
+                            <if condition=" $res.cate_id == $v.id ">
+                            selected
+                            </if> >{$v.cate_name}
+                            </option>
+                            </volist>
+                        </select>&emsp;
+                        <button class="btn btn-primary" type="submit">提交</button>
+                    </div><!-- end well -->
+
+                    <div class="tab-pane fade in" id="desc">
+                        <div class="well">
+                            <label>内容：</label>
+                            <textarea style="width: 95%;height: 300px;" name="content" class="input-xlarge">{$res.content}</textarea>
+                        </div><!-- end well -->
+                    </div>
+
+                </div>
+                <input type="hidden" name="md" value="{$res.md}"></input>
+                <input type="hidden" name="user_id" value="{$res.user_id}"></input>
+            </div>
+        </form>
+
+</div><!--/.col-xs-12.col-sm-9-->
