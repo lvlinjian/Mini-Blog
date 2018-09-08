@@ -1,3 +1,5 @@
+# 温馨提示：当前版本库于2018-9-9停止更新，以后将在：https://github.com/tabkey9/bmy 继续更新维护，这将是我的新GitHub账号
+
 ## 简介
 
 ```html
